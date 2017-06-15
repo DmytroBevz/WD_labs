@@ -1,0 +1,119 @@
+<head>
+    <script language="javascript" src = "alarm.js"></script>
+</head>
+<body onLoad="currtime();alarm()">
+         <table border="0" align="center" bgcolor="#c0c0c0" cellspacing="0" cellpadding="2" width="136">
+        <tr>
+          <td colspan="4">
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                   <b>Current Time</b>
+                 </font>
+              </td>
+            </tr>
+        <tr>
+          <td>
+         <form name="hours">
+             <p><input type="text" size="2" name="clock"></p>
+             </form>
+          </td>
+          <td>
+         <form name="minutes">
+             <p><input type="text" size="2" name="clock" /></p>
+             </form>
+          </td>
+          <td>
+         <form name="seconds">
+             <p><input type="text" size="2" name="clock" /></p>
+             </form>
+          </td>
+        </tr>
+     </table>
+
+
+         <table border="0" align="center" bgcolor="#c0c0c0" cellspacing="0" cellpadding="2" width="136">
+            <tr>
+          <td colspan="3">
+     <form name="arlm">
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                   <b>Alarm Time</b>
+                 </font>
+              </td>
+            </tr> 
+            <tr align="center">
+          <td>
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                    Year 
+                 </font>
+              </td>
+          <td>
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                     Month
+                 </font>
+              </td>
+          <td>
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                    Day
+                 </font>
+              </td>
+            </tr>
+            <tr align="center">
+          <td>
+             <input type="text" size="2" name="year" onFocus="select()" />
+
+          </td>
+          <td>
+               <input type="text" size="2" name="month" onFocus="select()" />
+          </td>
+          <td>
+              <input type="text" size="2"  name="day" onFocus="select()" />
+          </td>
+        </tr> 
+            <tr align="center">
+          <td>
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                    Hour 
+                 </font>
+              </td>
+          <td>
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                     Minute
+                 </font>
+              </td>
+            </tr>
+        <tr align="center">
+          <td>
+             <input type="text" size="2" name="hr" onFocus="select()" />
+
+          </td>
+          <td>
+               <input type="text" size="2" name="mts" onFocus="select()" />
+          </td>
+        </tr>
+            <tr align="left">
+          <td colspan="3">
+                 <font size="1" face="verdana, arial, helvetica, ms sans serif">
+                    Message
+                 </font>
+              </td>
+            </tr>
+        <tr align="left">
+              <td colspan="3">
+                 <input type="text" size="15" value="Wake Up!" name="message" /><br>
+          </td>
+        </tr>
+            <tr>
+          <td align="center" colspan="3">
+             <input type="button" size="2" value="Set Alarm" onClick="set_up()" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="3">
+             <input type="button" size="2" value="Reset" onClick="reset()" />
+          </td>
+            </tr>
+     </table>
+     </form>
+     <br/>
+     <br/>
+     <div id='container'/>
+</body>

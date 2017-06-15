@@ -1,0 +1,100 @@
+html, body /* отступ от окна браузера */
+{
+	margin: 0;
+	padding: 0;
+	background-image:url('../books.jpg');
+}
+
+div 
+{
+	border: 1px solid black; /*установка линий между секциями*/
+}
+
+h2
+{
+	line-height: 0.5em; /* на 10% збільшена висота рядка*/
+}
+
+table
+{
+	width: 80%;
+	height: 70%;
+	text-align: center;
+	line-height: -0.5em; /* на 10% збільшена висота рядка*/
+}
+
+th
+{
+	width: 5%;
+	font-style: italic; 
+}
+
+td
+{
+	font-weight: bold;
+	font-style: italic;
+}
+/*********************************************************/
+#container
+{
+	width: 100%;
+	margin: auto;	
+	height:600px;
+	text-align: center;
+	background-color:#FFFFCC;
+}
+/*********************************************************/
+#header
+{
+	float:left;
+	width:50%;
+	height: 17%;
+	font-size: 3em; /*втричі більший шрифт*/
+	font-style: italic; 
+	line-height: 2.0em; /* на 10% збільшена висота рядка*/
+	letter-spacing: -0.04em; /* на 4% зменшена відстань між символами*/
+}
+/*********************************************************/
+#nav
+{
+	height: 17%;
+	margin-left:50%;
+}
+
+#nav ul
+{
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.1em;
+	color:#000000;
+	text-decoration:none;
+}
+
+#nav ul li a
+{
+	color: #000000;
+}
+
+/*********************************************************/
+#sidebar
+{
+	float: left;
+	width: 30%;
+	height: 75%;
+}
+/*********************************************************/
+#content
+{
+	padding-left: 1%;
+	height: 75%;
+	margin-left:30%;
+	text-align: left;
+}
+/*********************************************************/
+#footer 
+{
+	font-size: 1.1em;
+	color:#B86443;
+	height: 7%;
+	line-height: 2.0em; /* на 10% збільшена висота рядка*/
+}
